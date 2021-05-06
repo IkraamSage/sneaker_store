@@ -72,10 +72,6 @@
   height: 50vh;
   transform: translate(-50%, -50%);
 }
-/* Used to prevent the carousel from stretching the screen */
-.owl-carousel {
-  overflow: hidden;
-}
 
 /* Used to scale down the home image. You can remove this. */
 img {
@@ -84,24 +80,26 @@ img {
 
 /* PLEASE START YOUR STYLES UNDERNEATH THIS */
 .section {
-  background-image: url(banner.jpg);
+  background-image: url(./images/banner.jpg);
 }
 .content {
   display: flex;
   align-items: center;
-  font-family: sans-serif;
-  padding: 15%;
+  font-family: "Roboto", sans-serif;
+  padding: 10%;
   color: #222;
   font-size: larger;
 }
 
 .home-heading1 {
   color: #222;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-size: 50px;
 }
 .home-heading2 {
   color: #ed2d34;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-size: 50px;
 }
 .btn {
   justify-content: center;
@@ -109,7 +107,7 @@ img {
   color: #222;
   border-radius: 50px;
   border: 2px solid#222;
-  padding: 4%;
+  padding: 15px 50px;
   transition: 0.2s ease-in;
 }
 .btn:hover {
@@ -121,4 +119,49 @@ img {
   align-items: flex-start;
   flex-direction: column;
   gap: 20px;
+}
+
+#productPage {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 20%;
+  color: #222;
+}
+.headings {
+  display: flex;
+  flex-direction: column;
+  font-size: 180%;
+}
+.numbers {
+  display: flex;
+  justify-content: space-around;
+
+  width: 50%;
+  text-align: center;
+}
+.page-heading {
+  color: #222;
+}
+.page-subtitle {
+  color: #ed2d34;
+}
+.num {
+  font-weight: bold;
+  font-size: xx-large;
+}
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.product img {
+  max-width: 30vw;
 }
