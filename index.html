@@ -39,6 +39,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sneaker Store</title>
     <!-- 3rd Party CSS -->
+    <script
+      src="https://kit.fontawesome.com/85677d8629.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.css"
@@ -144,8 +148,8 @@
         <div id="testimonialPage" class="content">
           <!-- Page header -->
           <header class="page-header-container">
-            <h2 class="page-heading">Best In Business</h2>
-            <h3 class="page-subtitle">Happy Customers</h3>
+            <h2 class="page-heading" id="main">Best In Business</h2>
+            <h3 class="page-subtitle" id="sub">Happy Customers</h3>
           </header>
           <div id="testimonial-slider" class="owl-carousel">
             <!-- The content for the testimonials has been created using JavaScript. 
@@ -157,21 +161,36 @@
       <div class="section">
         <div id="contactPage" class="content">
           <!-- Page header -->
-          <header class="page-header-container">
-            <h2 class="page-heading">Questions?</h2>
-            <h3 class="page-subtitle">Let's get in touch</h3>
-          </header>
-          <!-- Contact Details -->
-          <div class="contact-details-container">
-            <h4 class="contact-details-heading">Warehouse Location</h4>
-            <p class="contact-details-description">
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered .
-            </p>
-            <!-- Please insert location, contact numbers and email elements here -->
+          <div id="text">
+            <header class="page-header-container" id="con-pg">
+              <h2 class="page-heading" id="main1">Questions?</h2>
+              <h3 class="page-subtitle" id="sub1">Let's get in touch</h3>
+            </header>
+            <!-- Contact Details -->
+            <div class="contact-details-container">
+              <h4 class="contact-details-heading">Warehouse Location</h4>
+              <p class="contact-details-description">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered .
+              </p>
+              <!-- Please insert location, contact numbers and email elements here -->
+              <p class="details">
+                <i class="fas fa-map-marker-alt contact icon"></i>
+              </p>
+              <p class="details">
+                <i class="fas fa-phone-volume contact-icon"></i>
+              </p>
+              <p class="details">
+                <i class="fas fa-paper-plane contact-icon"></i>
+              </p>
+            </div>
           </div>
           <!-- Create new form on FORMSPREE and insert ULR in the ACTION ATTRIBUTE -->
-          <form id="contact-form">
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/mknkoedk"
+            method="POST"
+          >
             <input
               class="contact-input"
               type="text"
@@ -202,7 +221,7 @@
               id="message"
               placeholder="Type your message here"
             ></textarea>
-            <button class="button" type="submit">Submit Information</button>
+            <button class="btn" type="submit">Submit Information</button>
           </form>
         </div>
       </div>
