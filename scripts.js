@@ -45,12 +45,12 @@ fetch(randomUserURL)
     // Loop over users and create testimonial for them
     users.forEach((user) => {
       testimonialContainer.innerHTML += `
-                <div class="testimonial">
-                    <q class="testimonial-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.</q>
-                    <img class="testimonial-img" id="test-img" src="${user.picture.large}" alt="${user.name.first} ${user.name.last}">
-                    <h4 class="testimonial-name">${user.name.first} ${user.name.last}</h4>
-                </div>
-            `;
+                  <div class="testimonial">
+                      <q class="testimonial-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.</q>
+                      <img class="testimonial-img" id="test-img" src="${user.picture.large}" alt="${user.name.first} ${user.name.last}">
+                      <h4 class="testimonial-name">${user.name.first} ${user.name.last}</h4>
+                  </div>
+              `;
     });
     //   Initialize testimonial slider
     $("#testimonial-slider").owlCarousel({

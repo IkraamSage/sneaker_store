@@ -1,33 +1,22 @@
 <!-- 
     SNEAKER STORE PROJECT
-
     You are tasked to replicate the following site: https://megaone.acrothemes.com/index-product-hotspot.html
-
     Most of the HTML structure has been set up for you, however you will have to go through the document to
     fill in the missing HTML elements and classes. I have also included the background, and 2 images for you.
-
     If you would like to edit settings of either Owl Carousel or FullPage.js, you will need to edit the settings
     in the scripts.js file.
-
     Owl Carousel Options:
     https://owlcarousel2.github.io/OwlCarousel2/docs/api-options.html
-
     FullPage.js Options:
     https://github.com/alvarotrigo/fullPage.js#options
-
     I have also linked and initialized Animate On Scroll (AOS). You will need to go through the documentation
     to apply the correct attributes to get the desired outcome.
-
     AOS Documentation:
     https://michalsnik.github.io/aos/
-
     You will also have to link in your own FontAwesome kits. I have marked the area for this script with a comment
-
     FontAwesome Icons:
     https://fontawesome.com/icons?d=gallery&p=2&m=free
-
     THE DEADLINE FOR THE PROJECT IS FRIDAY 7 MAY
-
     Goodluck and have fun!
  -->
 
@@ -134,13 +123,74 @@
             </div>
           </div>
           <div id="modal">
-            <!-- Add modal content here. Please pay careful 
-                attention to layout and styling, and please ignore any functionality 
-                eg: switching images on click.
-                *PS* you do not have to create multiple of these, they should all look the same -->
-            <h2>Modal Content</h2>
+            <div class="modal-images">
+              <img class="big-modal-image" src="./images/sneaker1.jpg" alt="" />
+              <div class="small-modal-images">
+                <img
+                  class="small-modal-image"
+                  src="./images/sneaker2.jpg"
+                  alt=""
+                />
+                <img
+                  class="small-modal-image"
+                  src="/images/sneaker3.jpg"
+                  alt=""
+                />
+                <img
+                  class="small-modal-image"
+                  src="/images/sneaker4.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <div>
+                <h5>f#zz-article</h5>
+                <h3 class="red-text">Nike</h3>
+                <p>
+                  Lorem ipsum is simply dummy text of the printing and
+                  typesetting. Lorem Ipsum has been the industry’s standard
+                  dummy.
+                </p>
+              </div>
+              <div class="product-specs sizes">
+                <div id="act-size" class="red-text">Size:</div>
+                <div class="size">3</div>
+                <div class="size">4</div>
+                <div class="size">5</div>
+                <div class="size">6</div>
+                <div class="size">7</div>
+                <div class="size">8</div>
+                <div class="size">9</div>
+                <div class="size">10</div>
+              </div>
+              <div class="product-specs Qty-color">
+                <div class="red-text qty">Qty:</div>
+                <div class="quantity">
+                  <span>-</span>
+                  <span id="number">1</span>
+                  <span>+</span>
+                </div>
+                <div class="red-text color-text">
+                  Color:
+                  <div class="colors">
+                    <span class="color color-1"></span>
+                    <span class="color color-2"></span>
+                    <span class="color color-3"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-specs price red-text">$299.00</div>
+              <a href="#" class="buy">Buy Now</a>
+            </div>
             <!-- Button to close modal. Please style appropriately -->
-            <button class="btn" onclick="openModal()">Close</button>
+            <button onclick="openModal()">
+              <i class="fas fa-times fa-2x close"></i>
+            </button>
+            <div class="arrows">
+              <span><i class="fas fa-chevron-left"></i></span>
+              <span><i class="fas fa-chevron-right"></i></span>
+            </div>
           </div>
         </div>
       </div>
@@ -168,21 +218,32 @@
             </header>
             <!-- Contact Details -->
             <div class="contact-details-container">
-              <h4 class="contact-details-heading">Warehouse Location</h4>
-              <p class="contact-details-description">
+              <h4 class="contact-details-heading" id="warehouse">
+                Warehouse Location
+              </h4>
+              <p class="contact-details-description" id="c-d-d">
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered .
               </p>
               <!-- Please insert location, contact numbers and email elements here -->
-              <p class="details">
-                <i class="fas fa-map-marker-alt contact icon"></i>
+              <p class="details" id="detail">
+                <i class="fas fa-map-marker-alt contact-icon"></i> 123 Park
+                Avenue, New York, United States
               </p>
-              <p class="details">
-                <i class="fas fa-phone-volume contact-icon"></i>
+              <p class="details" id="detail">
+                <i class="fas fa-phone-volume contact-icon"></i> +1 631 1234
+                5678
               </p>
-              <p class="details">
+              <p class="details" id="detail">
                 <i class="fas fa-paper-plane contact-icon"></i>
+                email@website.com
               </p>
+            </div>
+            <div class="touch-icon">
+              <a id="link" href="#"><i class="fab fa-facebook-f red"></i></a>
+              <a id="link" href="#"> <i class="fab fa-linkedin-in red"></i></a>
+              <a id="link" href="#"> <i class="fab fa-twitter red"></i></a>
+              <a id="link" href="#"> <i class="fab fa-instagram red"></i></a>
             </div>
           </div>
           <!-- Create new form on FORMSPREE and insert ULR in the ACTION ATTRIBUTE -->

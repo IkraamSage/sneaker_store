@@ -81,6 +81,7 @@ img {
 /* PLEASE START YOUR STYLES UNDERNEATH THIS */
 .section {
   background-image: url(./images/banner.jpg);
+  background-size: cover;
 }
 .content {
   display: flex;
@@ -251,4 +252,323 @@ img {
 .contact-details-heading {
   font-size: 32px;
   margin-bottom: 5%;
+}
+#modal.modal-active {
+  width: 90%;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 5% 50px;
+  background: white;
+  margin-top: 25px;
+  margin-left: -2%;
+  opacity: 1;
+}
+.modal-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+}
+.big-modal-image {
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+.small-modal-images {
+  display: flex;
+}
+.small-modal-image {
+  margin-top: 20px;
+  width: 150px;
+}
+#modal button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: none;
+  border: none;
+}
+#modal h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 0;
+}
+#modal h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+#modal p {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+.product-specs {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.sizes {
+  display: flex;
+  flex-direction: row;
+}
+#act-size {
+  margin-right: 50px;
+}
+.size {
+  margin-right: 30px;
+}
+.quantity {
+  display: flex;
+}
+.Qty-color {
+  display: flex;
+}
+.qty {
+  margin-right: 60px;
+}
+.color-text {
+  margin-left: 130px;
+  display: flex;
+}
+#number {
+  margin: 0 20px;
+}
+
+.color-1,
+.color-2,
+.color-3 {
+  padding: 0.5px 13px;
+  margin-right: 5px;
+}
+.color-1 {
+  background-color: white;
+  border: solid 1px black;
+}
+.color-2 {
+  background-color: #90cdf0;
+}
+.color-3 {
+  background-color: #f58357;
+}
+.colors {
+  margin-left: 55px;
+}
+.price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+a.buy {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  border: solid 2px #464646;
+  color: #464646;
+  padding: 15px 45px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: 0.3s ease-in;
+}
+a.buy:hover {
+  border: solid 2px #ed2d34;
+  background-color: #ed2d34;
+  color: white;
+}
+.arrows {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  margin-right: 10px;
+}
+.arrows span {
+  width: 10px;
+  height: 10px;
+  margin-right: 20px;
+  border: solid 1px #464646;
+  padding: 10px 13px;
+  border-radius: 50%;
+  transition: 0.3s ease-in;
+}
+.arrows span:hover {
+  background-color: #ed2d34;
+  border: solid 1px #ed2d34;
+  color: white;
+}
+.close {
+  padding: 20px;
+  outline: none;
+  transition: 0.3s ease-in;
+}
+.close:hover {
+  color: #ed2d34;
+  cursor: pointer;
+}
+
+/*Page 4*/
+#contactPage {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  object-fit: covers;
+}
+#text {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 50%;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#full_name {
+  border: none;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+#contact_no {
+  border: none;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+#email {
+  border: none;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+#message {
+  border: none;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+#main1 {
+  font-size: 50px;
+}
+
+#sub1 {
+  font-size: 50px;
+  margin-bottom: 5%;
+}
+#c-d-d {
+  margin: 0 0 25px;
+}
+#detail {
+  padding: 1%;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+#warehouse {
+  margin-bottom: 35px;
+  font-size: 30px;
+  font-weight: normal;
+}
+.contact-icon {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+#link {
+  padding: 1%;
+  text-decoration: none;
+  color: #222;
+  border-radius: 50px;
+  border: 2px none;
+  transition: 0.2s ease-in;
+}
+
+#link:hover {
+  background-color: #ed2d34;
+  color: white;
+}
+/*Page 4*/
+#contactPage {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+#text {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 50%;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#full_name {
+  border: none;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+#contact_no {
+  border: none;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+#email {
+  border: none;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+#message {
+  border: none;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+#main1 {
+  font-size: 50px;
+}
+
+#sub1 {
+  font-size: 50px;
+  margin-bottom: 5%;
+}
+#c-d-d {
+  margin: 0 0 25px;
+}
+#detail {
+  padding: 1%;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+#warehouse {
+  margin-bottom: 35px;
+  font-size: 30px;
+  font-weight: normal;
+}
+.contact-icon {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+#link {
+  padding: 1%;
+  text-decoration: none;
+  color: #222;
+  border-radius: 50px;
+  border: 2px none;
+  transition: 0.2s ease-in;
+}
+
+#link:hover {
+  background-color: #ed2d34;
+  color: white;
 }
